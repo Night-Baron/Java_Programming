@@ -1,0 +1,13 @@
+문자열 함수
+
+1. 문자열 동등 비교: 문자열1.equals(문자열2)
+	"abs".equals("ABC") => false
+2. 문자열 대소문자 무시하고 동등 비교: 문자열1.equals.equalsIgnoreCase(문자열2)
+	"abs".eqaulsIgnoreCase("ABC") => true
+3. 문자열 비교: 문자열1.compareTo(문자열2) => 문자열1 - 문자열2
+	"abcd".compareTo("abddyy") => -1(c - d 값 출력)
+	"abcd".compareTo("dfdyy") => -3
+	"dfdyy".compareTo("abcd") => 3
+4. 문자열 교체: 문자열. replaceAll(구단어, 신단어)
+	String s = "Hello, world! Heelo, JAVA!", replaceAll("Heelo", "Hello")
+	==> s = "Hello, world! Hello, JAVA!"
